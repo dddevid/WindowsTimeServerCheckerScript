@@ -19,6 +19,12 @@ function Get-Time {
 # Clear the console
 Clear-Host
 
+# Print initial time
+$time = Get-Time
+if ($time) {
+    Write-Host $time -NoNewline
+}
+
 # Infinite loop that updates the time every second
 while ($true) {
   $time = Get-Time
