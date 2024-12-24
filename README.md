@@ -19,4 +19,4 @@ This PowerShell script checks the time from `time.windows.com` NTP server and di
 1. **Run the script directly from GitHub:**
 
 ```powershell
-Invoke-WebRequest -Uri "[https://raw.githubusercontent.com/dddevid/WindowsTimeServerCheckerScript/refs/heads/main/get-time.ps1](https://raw.githubusercontent.com/dddevid/WindowsTimeServerCheckerScript/refs/heads/main/get-time.ps1)" | Invoke-Expression
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/dddevid/WindowsTimeServerCheckerScript/refs/heads/main/get-time.ps1" | Invoke-Expression
