@@ -16,11 +16,16 @@ function Get-Time {
   }
 }
 
-# Infinite loop that prints the time every second
+# Clear the console
+Clear-Host
+
+# Infinite loop that updates the time every second
 while ($true) {
   $time = Get-Time
   if ($time) {
-    Write-Host $time
+    # Set the cursor position to the beginning of the line
+    [Console]::SetCursorPosition(0, [Console]::CursorTop)
+    Write-Host $time -NoNewline
   }
   Start-Sleep -Seconds 1
 }
